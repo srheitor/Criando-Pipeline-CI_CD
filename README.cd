@@ -14,3 +14,6 @@ Adicionar uma etapa subsequente que pegue o artefato empacotado (dist/)
 e realize o deploy automático diretamente no ambiente de produção 
 (por exemplo, publicando em um servidor em nuvem ou registro de pacotes como o PyPI) 
 sem necessidade de aprovação ou intervenção manual humana.
+
+
+https://github.com/srheitor/Criando-Pipeline-CI_CD/actions/runs/32789468551/artifacts/9542615869

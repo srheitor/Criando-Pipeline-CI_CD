@@ -1,0 +1,16 @@
+1. O que representa a etapa de CI neste projeto?
+Representa o processo automatizado de baixar o código, 
+configurar o interpretador Python, 
+instalar dependências e executar a suíte de testes com o pytest a cada push ou pull_request. 
+Ela atua como um quality gate, garantindo que novas alterações não quebrem as regras de negócio existentes.
+
+2. O que impede a execução do Continuous Delivery quando existe um defeito?
+A diretiva needs: ci no job de delivery. 
+Se qualquer asserção dos testes falhar durante o job de CI, 
+o runner do GitHub encerra a execução com status de erro, bloqueando a execução de jobs dependentes.
+
+3. Qual seria a próxima etapa necessária para transformar este pipeline em Continuous Deployment?
+Adicionar uma etapa subsequente que pegue o artefato empacotado (dist/) 
+e realize o deploy automático diretamente no ambiente de produção 
+(por exemplo, publicando em um servidor em nuvem ou registro de pacotes como o PyPI) 
+sem necessidade de aprovação ou intervenção manual humana.
